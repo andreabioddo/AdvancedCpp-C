@@ -1,9 +1,9 @@
 /**
- * @file Ex1.cpp
+ * @file Ex1Over.cpp
  * @author Andrea Bioddo (anbioddo@edu.aau.at)
  * @version 0.1
  * @date 2022-10-28
- * @brief Classes with virtual method to see the differences between virtual methods and ovverride methods
+ * @brief Classes without virtual method to see the differences between virtual methods and ovverride methods
  * 
  */
 
@@ -27,11 +27,11 @@ class Shape{
             height = b;
         }
 
-        virtual void display(){
+        void display(){
             cout << "Shape" << endl;
         }
 
-        virtual int area(){
+        int area(){
             cout << "Parent class area: " << endl;
             return 0;
         }
@@ -55,11 +55,11 @@ class AngleShape:public Shape {
             return angleNum;
         }
 
-        virtual void display(){
+        void display(){
             cout << "AngleShape" << endl;
         }
 
-        virtual int area() {
+        int area() {
             return 0;
         }
 };
@@ -73,11 +73,11 @@ class CurvedShape:public Shape {
         /*Constructor of the class*/
         CurvedShape(int a=0, int b=0):Shape(a,b){}
 
-        virtual void display(){
+        void display(){
             cout << "Curved shape" << endl;
         }
 
-        virtual int area(){
+        int area(){
             return 0;
         }
 };

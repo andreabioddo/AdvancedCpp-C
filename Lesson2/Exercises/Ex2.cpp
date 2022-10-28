@@ -1,6 +1,19 @@
+/**
+ * @file Ex2.cpp
+ * @author Andrea Bioddo (anbioddo@edu.aau.at)
+ * @version 0.1
+ * @date 2022-10-28
+ * @brief Class that rapresents Time, with methods set, get and increment
+ * 
+ */
+
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Class that rapresent Time
+ * 
+ */
 class Time{
     protected:
         int hour;
@@ -17,14 +30,29 @@ class Time{
         void incrementTime();
 };
 
+/**
+ * @brief Check if the input is a number between 0 and 23. Return true
+ * if the h follows the rule, false otherwise
+ * 
+ */
 bool Time::checkHour(int h){
     return (h>=0 && h<=23);
 }
 
+/**
+ * @brief Check if the input is a number between 0 and 59. Return true
+ * if the h follows the rule, false otherwise
+ * 
+ */
 bool Time::checkMinSec(int t){
     return (t>=0 && t <=59);
 }
 
+/**
+ * @brief Check if the inputs are right to rapresent time. Return true
+ * if the h, m, and s rapresent, false otherwise
+ * 
+ */
 bool Time::checkTime(int h, int m, int s){
     if(!checkHour(h))
         return false;
@@ -35,6 +63,10 @@ bool Time::checkTime(int h, int m, int s){
     return true;
 }
 
+/**
+ * @brief Time constructor
+ * 
+ */
 Time::Time(int h, int m, int s){
     if(!checkTime(h,m,s)){
         cout << "Error: wrong values "<< endl;
@@ -45,6 +77,10 @@ Time::Time(int h, int m, int s){
     second=s;
 }
 
+/**
+ * @brief Set new values for Hour, Minute and Second
+ * 
+ */
 void Time::setTime(int newH, int newM, int newS){
     if(!checkTime(newH,newM,newS)){
         cout << "Error: wrong values "<< endl;
@@ -55,12 +91,20 @@ void Time::setTime(int newH, int newM, int newS){
     second=(newS != -1) ? newS : second;
 }
 
+/**
+ * @brief Set the three pointers with the actual time
+ * 
+ */
 void Time::getTime(int &h, int &m, int &s){
     h = hour;
     m = minute;
     s = second;
 }
 
+/**
+ * @brief increment of one second the time
+ * 
+ */
 void Time::incrementTime(){
     if(second < 59){
         second++;
