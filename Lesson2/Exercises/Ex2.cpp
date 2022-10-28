@@ -3,7 +3,8 @@
  * @author Andrea Bioddo (anbioddo@edu.aau.at)
  * @version 0.1
  * @date 2022-10-28
- * @brief Class that rapresents Time, with methods set, get and increment
+ * @brief Class that rapresents Time, with methods set, get and increment. Time class has also protected method needed
+ * to check the validity of the values passed
  * 
  */
 

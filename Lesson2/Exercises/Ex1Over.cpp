@@ -3,8 +3,10 @@
  * @author Andrea Bioddo (anbioddo@edu.aau.at)
  * @version 0.1
  * @date 2022-10-28
- * @brief Classes without virtual method to see the differences between virtual methods and ovverride methods
- * 
+ * @brief Classes with virtual method to see the differences between virtual methods and ovverride methods.
+ * The file Ex1.cpp has different classes where the methods of parent classes use the keyword virtual. In this case, we can see that running the main, the methods will execute not the parent method but their own method. 
+ * On the other side, running the Ex1Over.cpp (that doesn’t use the keyword virtual), we can see that the main will execute the parent method, ignoring the child method. 
+ *
  */
 
 #define _USE_MATH_DEFINES
