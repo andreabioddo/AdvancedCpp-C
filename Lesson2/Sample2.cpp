@@ -19,7 +19,7 @@ void A::operator+(A a){
 
 int main(){
     A a1("welcome");
-    A a2("back"),
+    A a2("back");
     a1+a2;
     return 0;
 }

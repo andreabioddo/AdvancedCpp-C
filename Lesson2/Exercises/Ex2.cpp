@@ -126,13 +126,19 @@ void Time::incrementTime(){
 int main(){
     Time a(1,1,1);
     int h,m,s;
+    cout <<"Test" << endl;
     a.getTime(h,m,s);
-    cout << h << " " << m << " " << s << endl;
+    cout << "Hour: " << h << " minute: " << m << " second: " << s << endl;
     a.setTime(23,59,58);
     a.incrementTime();
     a.incrementTime();
     a.getTime(h,m,s);
-    cout << h << " " << m << " " << s << endl;    
+    cout << "Hour: " << h << " minute: " << m << " second: " << s << endl;
+    a.setTime(10,00,58);
+    a.incrementTime();
+    a.incrementTime();
+    a.getTime(h,m,s);
+    cout << "Hour: " << h << " minute: " << m << " second: " << s << endl;
     return 0;
 }
 
