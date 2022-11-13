@@ -1,0 +1,1 @@
+For this exercise, I've created the library Sortable that represents the class Sortable (same as the first assignment). The class sortable uses templates and at the bottom of the cpp file, I declared for which class you can use Sortable class. I also developed the library tool that has two static methods.

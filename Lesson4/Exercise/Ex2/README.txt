@@ -1,0 +1,1 @@
+This file implements the class MyClass: a generic class with a set and a get method. It implements also the main with some tests of the correct class's file.

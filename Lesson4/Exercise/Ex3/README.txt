@@ -1,0 +1,2 @@
+Stack.cpp implements a stack with a pre-defined length. It uses templates and implements basic functions such as get, set, getMax, getSum, getSize, isEmpty and isFull.
+When a user wants to use the class, he/she has to define the length of the stack in the constructor method.
