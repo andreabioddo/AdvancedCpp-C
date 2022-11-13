@@ -36,7 +36,7 @@ namespace BinaryConvertion{
         struct binary bin;
         long int s;
         bool valid = false;
-        cout << "Please enter a binary to convert" << endl;
+        cout << "Please enter a binary to convert (letters are not allowed)" << endl;
         do{
             cin >> s;
             valid = check(s, &bin, maxDigit);

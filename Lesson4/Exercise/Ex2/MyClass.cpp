@@ -38,11 +38,6 @@ int main(){
     a.setValue(20);
     cout << "Value: " << a.getValue() << endl;
 
-    MyClass <string> b("Hello");
-    cout << "Value: " << b.getValue() << endl;
-    b.setValue("World");
-    cout << "Value: " << b.getValue() << endl;
-
     MyClass <double> c(30.12);
     cout << "Value: " << c.getValue() << endl;
     c.setValue(60.98);
